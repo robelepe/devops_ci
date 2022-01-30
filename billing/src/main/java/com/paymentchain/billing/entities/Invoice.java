@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.paymentchain.billing.entities;
 
@@ -11,20 +10,20 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import lombok.Data;
 
-
-
 /**
  *
- * @author sotobotero
+ * @author robelp
  */
 @Entity
 @Data
 public class Invoice {
-   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
-   private long id;
-   private long customerId;
-   private String number;
-   private String detail;
-   private double amount;  
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    private long customerId;
+    private String number;
+    private String detail;
+    private double amount;
+
 }

@@ -14,16 +14,16 @@ import lombok.Data;
  * @author sotobotero
  */
 @Data
-@ApiModel(description = "This model represent a Invoice data that user receive when make a request method" )
+@ApiModel(description = "This model represent a Invoice data that user receive when make a request method")
 public class InvoiceRequest {
-    
-    @ApiModelProperty(name = "customer", required = true,example = "1", value = "Unique Id of customer taht represent the owner of invoice")
+
+    @ApiModelProperty(name = "customer", required = true, example = "1", value = "Unique Id of customer taht represent the owner of invoice")
     private long customer;
-     @ApiModelProperty(name = "number", required = true,example = "2548975",value = "Bussines number that identified a invoice",allowEmptyValue = false)
-  private String number;
-      @ApiModelProperty(name = "detail", required = false,example = "Professional services")
-   private String detail;
-      @ApiModelProperty(name = "amount", required = true,example = "3659.23")
-   private double amount;    
-   
+    @ApiModelProperty(name = "number", required = true, example = "2548975", value = "Bussines number that identified a invoice", allowEmptyValue = false)
+    private String number;
+    @ApiModelProperty(name = "detail", required = false, example = "Professional services")
+    private String detail;
+    @ApiModelProperty(name = "amount", required = true, example = "3659.23")
+    private double amount;
+
 }
